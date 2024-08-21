@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.container {
+    width: 1177px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the save button relative to the container */
+}
+
+h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="date"], 
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    height: 39px;
+}
+
+textarea {
+    resize: none;
+    height: 174px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 10px); /* Three equal columns with space between */
+}
+
+.form-column textarea {
+    height: 174px;
+}
+
+.small-width {
+    width: 100%;
+}
+
+.medium-width {
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Save Button Section */
+.bottom-section {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.save-button {
+    padding: 10px 20px;
+    background-color: #e7a763;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.save-button:hover {
+    background-color: #f2930f;
+}
+
+.attachment-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    cursor: pointer;
+}
